@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PointSense — Privacy Policy</title>
+<style>
+  :root { --ink:#0E1B2A; --teal:#0F766E; --gold:#8A5A00; --muted:#3F4A5A; --bg:#F7F9FB; --border:#E2E8F0; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  header { display:flex; align-items:center; gap:12px; padding-bottom:16px; border-bottom:3px solid var(--teal); }
+  .mark { font-size:22px; font-weight:800; letter-spacing:-0.02em; }
+  .mark .s { color:var(--gold); }
+  h1 { font-size:30px; margin:32px 0 4px; letter-spacing:-0.01em; }
+  .eff { color:var(--muted); font-size:14px; margin:0 0 8px; }
+  h2 { font-size:20px; margin:34px 0 6px; }
+  p, li { color:var(--muted); }
+  li { margin:4px 0; }
+  a { color:var(--teal); font-weight:600; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border:1px solid var(--border); }
+  th { background:#EEF2F6; color:var(--ink); }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--border); font-size:14px; color:var(--muted); }
+  footer a { margin-right:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><span class="mark">Point<span class="s">Sense</span></span></header>
+
+  <h1>Privacy Policy</h1>
+  <p class="eff">Effective July 4, 2026</p>
+
+  <p>This policy explains what PointSense ("PointSense," "we," "us") collects, how we use it, and the choices you have. PointSense is a loyalty-points tracker with an AI valuation layer. Our guiding principle: we collect the minimum needed to run the app, we never connect to your bank or airline accounts, and we never sell your data.</p>
+
+  <h2>Information we collect</h2>
+  <table>
+    <tr><th>Category</th><th>What</th><th>Why</th></tr>
+    <tr><td>Account</td><td>Your email address (used for one-time-code sign-in)</td><td>Create and secure your account</td></tr>
+    <tr><td>Your content</td><td>Loyalty programs, balances, and activity dates you enter; travel-document images, labels, and expiry dates you add to the vault; goals you type into the AI advisor</td><td>Provide the core features you use</td></tr>
+    <tr><td>Forwarded emails (optional, Pro)</td><td>If you enable email sync, statement emails you forward to your private address. We extract the balance and store only the sender domain, subject, and parsed balance — <strong>never the email body</strong></td><td>Keep your balances up to date automatically</td></tr>
+    <tr><td>Subscription</td><td>Your subscription status (via Apple / RevenueCat). We do <strong>not</strong> receive your card or payment details</td><td>Unlock Pro features</td></tr>
+    <tr><td>Device token</td><td>A push-notification token</td><td>Send expiry, devaluation, and update alerts</td></tr>
+  </table>
+  <p>We do <strong>not</strong> collect location, contacts, advertising identifiers, or analytics/ad-tracking data. PointSense contains no third-party advertising or tracking SDKs.</p>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To provide the service: valuations, expiry and devaluation alerts, the document vault, email sync, household sharing, and account security.</li>
+    <li>AI processing: program valuations and the "best use" guidance are generated at the <em>program</em> level (not tied to you). When you use the AI Advisor, your relevant balances and the goal you type are sent to our AI provider to generate advice. When email sync is on, forwarded email text is processed by AI to extract a balance. AI outputs are estimates for guidance only.</li>
+    <li>Household sharing: if you create or join a household, other members can see your shared points balances. Your document vault stays private unless you explicitly turn on sharing.</li>
+  </ul>
+  <p>We do not use your content to train AI models, and we do not sell or rent your personal information.</p>
+
+  <h2>Service providers</h2>
+  <p>We share data only with vendors that help us run the app, under their own security and privacy commitments:</p>
+  <ul>
+    <li><strong>Supabase</strong> — database, authentication, and encrypted file storage.</li>
+    <li><strong>Anthropic (Claude)</strong> — AI valuations, advisor, and email balance extraction.</li>
+    <li><strong>Apple &amp; RevenueCat</strong> — subscription processing and management.</li>
+    <li><strong>Resend</strong> — receiving the statement emails you forward for sync.</li>
+    <li><strong>Expo</strong> — delivering push notifications.</li>
+  </ul>
+
+  <h2>How your data is protected</h2>
+  <ul>
+    <li>Data is encrypted in transit and at rest.</li>
+    <li>Row-level security isolates your data so only you (and household members you invite) can access it.</li>
+    <li>Document images live in a private storage bucket and are opened only through short-lived, authorized links — there is no public access.</li>
+    <li>We store the minimum: for email sync we keep the parsed balance and basic metadata, never the message body.</li>
+  </ul>
+
+  <h2>Data retention &amp; your choices</h2>
+  <ul>
+    <li><strong>Access &amp; edit:</strong> you can view and change your data anytime in the app.</li>
+    <li><strong>Deletion:</strong> you can delete your account in the app, or email us to have your data removed. Deleting your account removes your programs, balances, documents, and history.</li>
+    <li>We retain your data while your account is active and delete it after account deletion, except where we must keep limited records to meet legal or tax obligations.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>PointSense is a general-audience app and is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. We'll revise the "Effective" date above and, for material changes, provide notice in the app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests about your privacy? Email <a href="mailto:jaketenhet@gmail.com">jaketenhet@gmail.com</a>.</p>
+
+  <footer>
+    <a href="/pointsense-legal/">Support</a>
+    <a href="/pointsense-legal/terms/">Terms of Service</a>
+    <span>© 2026 PointSense</span>
+  </footer>
+</div>
+</body>
+</html>
